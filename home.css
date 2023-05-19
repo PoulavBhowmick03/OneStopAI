@@ -3,14 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #071730;
+
   }
   
   header {
-    background-color: #1a202c;
+    background: #071730;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   
   h1, h2 {
@@ -37,9 +36,10 @@ body {
   }
   
   .menu{
+    right: 0;
     padding: 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   
   .menu li {
@@ -95,6 +95,7 @@ body {
   
   main {
     margin: 20px;
+    color: #fff;
   }
   
   ul {
