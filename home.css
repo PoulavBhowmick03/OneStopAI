@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Poppins&family=Quicksand:wght@700&family=Roboto+Slab&family=Ubuntu&family=Varela+Round&display=swap');
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,8 +6,18 @@ body {
     background: #071730;
 
   }
-  
-  header {
+
+h2{
+  font-size: 30px;
+  font-family: 'Chakra Petch', sans-serif;
+}  
+
+h1{
+  font-size: 100px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+header {
     background: #071730;
     padding: 20px;
   }
@@ -22,7 +33,7 @@ body {
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
     z-index: 999;
-    position: sticky;
+    position: fixed;
     left: 0;
     top: 0;
   }
@@ -36,9 +47,9 @@ body {
   
   .menu{
     right: 0;
-    padding: 10px;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   
   .menu li {
@@ -56,7 +67,7 @@ body {
   
   .menu li a:hover,
   .menu li a.active{
-    color: #088178;
+    color: #333;
   }
   
   .menu li a.active::after,
@@ -69,7 +80,7 @@ body {
     left: 20px;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .navbar {
       flex-direction: column;
     }
@@ -87,20 +98,67 @@ body {
     }
   
     .navbar-menu li a {
-      text-align: left;
+      text-align: right;
     }
   }
   
   
-  main {
+main {
     margin: 20px;
     color: #fff;
   }
-  
-  main h2{
-    
-    text-decoration: underline;
-  }
+
+.hero{
+  padding: 50px 10px;
+}
+
+.features{
+  font-size: 100px;
+  text-align: center;
+  height: 200px;
+  min-width: inherit;
+  background-color: #088178;
+  border-radius: 10%;
+}
+
+.feature1{
+  text-align: center;
+  height: 100px;
+  min-width: inherit;
+  background-color: #088178;
+  border-radius: 10%;
+}
+.feature2{
+  text-align: center;
+  height: 100px;
+  min-width: inherit;
+  background-color:wheat;
+  border-radius: 10%;
+}
+.feature3{
+  text-align: center;
+  height: 100px;
+  min-width: inherit;
+  background-color:chocolate;
+  border-radius: 10%;
+}
+.feature4{
+  text-align: center;
+  height: 100px;
+  min-width: inherit;
+  background-color: #088178;
+  border-radius: 10%;
+}
+.intro p{
+  font-size: 30px;
+  margin: 0;
+  padding: 0 20px ;
+  font-family: 'Poppins', sans-serif;
+}
+span{
+  color: antiquewhite;
+  font-weight: 1000;
+}
 a{
     color: #fff;
     text-decoration: none;
@@ -114,10 +172,6 @@ a{
   li {
     margin-bottom: 10px;
   }
-  
-  /*a {
-    
-  }*/
 
   footer {
     display: flex;
