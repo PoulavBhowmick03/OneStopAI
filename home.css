@@ -40,7 +40,7 @@ header {
   }
   
   .logo {
-    margin-left: 0;
+    padding: 15px;
     font-size: 2rem;
     font-weight: bold;
     text-align: left;
@@ -68,7 +68,7 @@ header {
   
   .menu li a:hover,
   .menu li a.active{
-    color: #333;
+    color: #ffd6d6;
   }
   
   .menu li a.active::after,
