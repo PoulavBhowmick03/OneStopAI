@@ -116,7 +116,7 @@ header {
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 35% }
+    to { width: 34vw }
   }
 
   @keyframes blinking {
@@ -138,41 +138,60 @@ main {
 }
 
 .features{
-  font-size: 100px;
+  margin: 2px 0;
+  padding: 2px;
+  font-size: 50px;
   text-align: center;
   height: 200px;
-  min-width: inherit;
-  background-color: #088178;
-  border-radius: 10%;
+  width: 96vw;
+  background-color: #0b4341;
+  border-radius: 20px;
+  border: solid 0.5px hsl(0, 45%, 81%);
 }
 
 .feature1{
+  margin: 20px 0;
+  padding: 2px;
+  font-size: 50px;
   text-align: center;
-  height: 100px;
-  min-width: inherit;
-  background-color: #088178;
-  border-radius: 10%;
+  height: 200px;
+  width: 96vw;
+  background-color: #14344a;
+  border-radius: 20px;
+  border: solid 0.5px hsl(0, 45%, 81%);
 }
 .feature2{
+  margin: 20px 0;
+  padding: 2px;
+  font-size: 50px;
   text-align: center;
-  height: 100px;
-  min-width: inherit;
-  background-color:wheat;
-  border-radius: 10%;
+  height: 200px;
+  width: 96vw;
+  background-color: #915a07;
+  border-radius: 20px;
+  border: solid 0.5px hsl(0, 45%, 81%);
 }
 .feature3{
+  margin: 20px 0;
+  padding: 2px;
+  font-size: 50px;
   text-align: center;
-  height: 100px;
-  min-width: inherit;
-  background-color:chocolate;
-  border-radius: 10%;
+  height: 200px;
+  width: 96vw;
+  background-color: #65aba8;
+  border-radius: 20px;
+  border: solid 0.5px hsl(0, 45%, 81%);
 }
 .feature4{
+  margin: 20px 0;
+  padding: 2px;
+  font-size: 50px;
   text-align: center;
-  height: 100px;
-  min-width: inherit;
-  background-color: #088178;
-  border-radius: 10%;
+  height: 200px;
+  width: 96vw;
+  background-color: #17a4a0;
+  border-radius: 20px;
+  border: solid 0.5px hsl(0, 45%, 81%);
 }
 .intro p{
   font-size: 30px;
@@ -198,6 +217,31 @@ a{
     margin-bottom: 10px;
   }
 
+  .last{
+    display: flex;
+    justify-content: space-between;
+  }
+  .last .github{
+    padding: 10px 20px;
+    background-color: rgb(53, 85, 118);
+    width: 46vw;
+    height:40vh;
+    border-radius: 30px;
+  }
+  .github {
+    background-image: url("github.jpg");
+    opacity: 100%;
+    padding: -100px;
+    object-fit: scale-down;
+  }
+
+  .last .contactus{
+    padding: 10px 20px;
+    background-color:rgb(16, 98, 94);
+    width: 46vw;
+    border-radius: 30px;
+
+  }
   footer {
     display: flex;
     align-items: center;
