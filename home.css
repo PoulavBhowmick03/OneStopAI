@@ -137,6 +137,46 @@ main {
   padding: 50px 10px;
 }
 
+.click-me {
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  background: linear-gradient(to right, #1e8372, rgb(179, 211, 115), rgb(223, 199, 168), #9bb9e0, #1e8372);
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-size: 300% 100%;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  color: black;
+}
+
+.click-me:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
 .features{
   margin: 2px 0;
   padding: 2px;
@@ -195,8 +235,8 @@ main {
 }
 .intro p{
   font-size: 30px;
-  margin: 0;
-  padding: 0 20px ;
+  margin: -5px 10px;
+  padding: 0 10px ;
   font-family: 'Poppins', sans-serif;
 }
 span{
