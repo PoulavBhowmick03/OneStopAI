@@ -138,10 +138,10 @@ header {
     backdrop-filter: blur(2px);
 backdrop-filter: brightness(60%);
 backdrop-filter: contrast(40%);
-backdrop-filter: drop-shadow(4px 4px 10px rgb(65, 65, 83));
+backdrop-filter: drop-shadow(4px 4px 10px rgb(54, 54, 154));
 
   }
-  .image{}
+
   .site2{
     margin: 20px;
     display: flex;

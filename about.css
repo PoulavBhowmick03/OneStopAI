@@ -105,7 +105,8 @@ header {
   }
   .info,
   .mission,
-  .categories{
+  .categories,
+  .contactme{
     margin-left: 10px;
     color: #fff;
     font-family: 'Poppins';
@@ -121,10 +122,18 @@ header {
   }
 
   .mission h2,
-  .categories h2{
+  .categories h2,
+  {
     font-size: 40px;
   }
 
+  .contactme h2{
+    margin-left: 15px;
+  }
+  .contactme a{
+    text-decoration: none;
+    color:gold;
+  }
   footer {
     display: flex;
     align-items: center;
