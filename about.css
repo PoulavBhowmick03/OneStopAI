@@ -103,76 +103,28 @@ header {
       text-align: right;
     }
   }
-
-  .name{
-    padding: 100px;
+  .info,
+  .mission,
+  .categories{
+    margin-left: 10px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 20px;
+  }
+  .info h1{
+    margin-top: 100px;
     font-family: 'Chakra Petch',sans-serif;
     font-weight: 1000;
     font-size: 60px;
     text-align: left;
-    color: #000;
-    height: 70vh;
-    background-color:cadetblue;
-  
-  }
-  .sites{
-    font-size: 20px;
-    text-align: center;
-    color: #000;
-    height: 70vh;
-    background-color: #ffd6d6;
-  }
-  .site1{
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .chatbot{
-    color: floralwhite;
-    background-image: url("chatbot_bg.jpg");
-    width: 50vw;
-    height: 50vh;
-    background-repeat: no;
-    object-fit: contain;
-    backdrop-filter: blur(2px);
-backdrop-filter: brightness(60%);
-backdrop-filter: contrast(40%);
-backdrop-filter: drop-shadow(4px 4px 10px rgb(65, 65, 83));
-
-  }
-  .image{}
-  .site2{
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .site3{
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .site4{
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .github {
-    background-image: url("github.jpg");
-    opacity: 100%;
-    padding: -100px;
-    object-fit: scale-down;
+    color: #fff;
   }
 
-  .last .contactus{
-    padding: 10px 20px;
-    background-color:rgb(16, 98, 94);
-    width: 46vw;
-    border-radius: 30px;
+  .mission h2,
+  .categories h2{
+    font-size: 40px;
   }
+
   footer {
     display: flex;
     align-items: center;
@@ -248,3 +200,56 @@ backdrop-filter: drop-shadow(4px 4px 10px rgb(65, 65, 83));
       margin-top: 20px;
     }
   }
+  .click-me a{
+    text-decoration: none;   
+    color: #fff;
+ 
+  }
+  .click-me{
+    cursor: pointer;
+   margin-left: 10px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #071730 ;
+    border: 2px solid #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s; 
+  }
+  
+  
+  .click-me:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #3ccfe3;
+    color: #000;
+    transition: all .35s;
+  }
+  
+  .click-me:hover{
+    color: #071730;
+  }
+  
+  .click-me:hover:after{
+    color: #071730;    
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  
+
+  
+
+  
