@@ -1,86 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Kanit:wght@300&family=Poppins&family=Quicksand:wght@700&family=Roboto+Slab&family=Ubuntu&family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Kanit:wght@300&family=Poppins&family=Quicksand:wght@700&family=Roboto+Slab&family=Ubuntu&family=Varela+Round&display=swap');
     body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #071730;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    }
 
-  }
+    h2 {
+      font-size: 30px;
+      font-family: 'Chakra Petch', sans-serif;
+    }  
 
-h2{
-  font-size: 30px;
-  font-family: 'Chakra Petch', sans-serif;
-}  
+    h1 {
+      font-size: 100px;
+      font-family: 'Chakra Petch', sans-serif;
+    }
 
-h1{
-  font-size: 100px;
-  font-family: 'Chakra Petch', sans-serif;
-}
+    header {
+      background-image: linear-gradient(to right, #000000 0%, #212e3b 74%);
 
-header {
-    background: #071730;
-    padding: 20px;
-  }
-  
-  h1, h2 {
-    margin: 0 15px;
-  }
-  
-  .navbar {
-    font-family: 'Kanit';
-    background: #071730;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
-    z-index: 999;
-    position: fixed;
-    min-width: 100vw;
-    left: 0;
-    top: 0;
-  }
-  
-  .logo {
-    padding: 15px;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: left;
-  }
-  
-  .menu{
-    right: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .menu li {
-    font-weight: 600;
-    font-size: 20px;
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 30px;
-  }
-  
-  .menu li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .menu li a:hover,
-  .menu li a.active{
-    color: #ffd6d6;
-  }
-  
-  .menu li a.active::after,
-  .menu li a:hover::after{
-    width: 30%;
-    height: 2px;
-    background: #088178;
-    position:absolute;
-    bottom: -4px;
-    left: 20px;
-  }
+      padding: 20px;
+    }
+
+    h1, h2 {
+      margin: 0 15px;
+    }
+
+    .navbar {
+      background-image: linear-gradient(to right, #000000 0%, #212e3b 74%);
+      font-family: 'Kanit';
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
+      z-index: 999;
+      position: fixed;
+      min-width: 100vw;
+      left: 0;
+      top: 0;
+    }
+
+    .logo {
+      padding: 15px;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .menu {
+      right: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .menu li {
+      font-weight: 600;
+      font-size: 20px;
+      display: inline-block;
+      margin-left: 15px;
+      margin-right: 30px;
+    }
+
+    .menu li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .menu li a:hover,
+    .menu li a.active {
+      color: #ffd6d6;
+    }
+
+    .menu li a.active::after,
+    .menu li a:hover::after {
+      width: 30%;
+      height: 2px;
+      background: #088178;
+      position:absolute;
+      bottom: -4px;
+      left: 20px;
+    }
+
   
   @media screen and (max-width: 700px) {
     .navbar {
@@ -122,7 +124,7 @@ header {
   }
 
   .mission h2,
-  .categories h2,
+  .categories h2
   {
     font-size: 40px;
   }
