@@ -179,7 +179,62 @@ main {
       background-position: 0% 50%;
   }
 }
+#whyonestop{
 
+}
+#whyonestop h2{
+  text-align: center;
+  font-size: 60px;
+  animation: moveInBottom 2s;
+}
+
+#whyonestop p,
+#whyonestop ul{
+  animation: moveInLeft 3s;
+}
+
+#whyonestop p{
+  font-size: 30px;
+}
+
+@keyframes moveInBottom{
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 100;
+    transform: translateY(0);
+  }
+}
+@keyframes moveInRight{
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  80%{
+    transform: translate(-10px);
+
+  }
+  100%{
+    opacity: 100;
+    transform: translate(0);
+  }
+}
+@keyframes moveInLeft{
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  80%{
+    transform: translate(10px);
+
+  }
+  100%{
+    opacity: 100;
+    transform: translate(0);
+  }
+}
 .features{
   margin: 2px 0;
   padding: 2px;
