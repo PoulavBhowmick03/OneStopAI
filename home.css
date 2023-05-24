@@ -1,4 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Kanit:wght@300&family=Poppins&family=Quicksand:wght@700&family=Roboto+Slab&family=Ubuntu&family=Varela+Round&display=swap');
+:root {
+  /*--color-primary: #6c63ff;*/
+  /*--color-primary:#424890;*/
+  --color-primary:#03548664;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  /*--color-danger: #f75842;*/
+  --color-define:#ff3c78;
+  --color-danger:#ff960b;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  /*--color-bg1: #2e3267;*/
+  --color-bg1:#023055;
+
+  --color-bg2: #03548664;
+  --color-bg3: #2979ab64;
+
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 500ms ease;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -19,7 +46,7 @@ h1 {
 
 header {
   background-image: linear-gradient(to right, #000000 0%, #212e3b 74%);
-
+  margin-top: 50px;
   padding: 20px;
 }
 
@@ -70,7 +97,9 @@ h1, h2 {
   
   .menu li a:hover,
   .menu li a.active{
-    color: #ffd6d6;
+    color: #7c4040;
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+
   }
   
   .menu li a.active::after,
@@ -136,7 +165,7 @@ main {
   }
 
 .hero{
-  /*height: 90vh;*/
+  height: 70vh;
   padding: 50px 10px;
 }
 
@@ -180,7 +209,7 @@ main {
   }
 }
 #whyonestop{
-
+margin-top: 100px;
 }
 #whyonestop h2{
   text-align: center;
@@ -235,61 +264,111 @@ main {
     transform: translate(0);
   }
 }
-.features{
-  margin: 2px 0;
-  padding: 2px;
-  font-size: 50px;
-  text-align: center;
-  height: 200px;
-  width: 96vw;
-  background-color: #0b4341;
-  border-radius: 20px;
-  border: solid 0.5px hsl(0, 45%, 81%);
+/* ==================== Features ================= */
+
+
+.achievements__cards {
+  row-gap: 2rem;
 }
 
-.feature1{
-  margin: 20px 0;
-  padding: 2px;
-  font-size: 50px;
+.features__cards .feature__card {
+  background: var(--color-bg3);
+  padding: 3rem;
+  border-radius: 1rem;
   text-align: center;
-  height: 200px;
-  width: 96vw;
-  background-color: #14344a;
-  border-radius: 20px;
-  border: solid 0.5px hsl(0, 45%, 81%);
+  transition: var(--transition);
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-color: #102d3c;
+  box-shadow: 0 0 30px 0.1px hsla(0, 0%, 0%, 0.955);
+  width: 250px;
+  height: 180px;
 }
-.feature2{
-  margin: 20px 0;
-  padding: 2px;
-  font-size: 50px;
-  text-align: center;
-  height: 200px;
-  width: 96vw;
-  background-color: #915a07;
-  border-radius: 20px;
-  border: solid 0.5px hsl(0, 45%, 81%);
+
+.feature__card:hover {
+  background: var(--color-bg2);
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+  z-index:100;
+  width:230px;
+  height: 160px;
+  z-index: 100;
 }
-.feature3{
-  margin: 20px 0;
-  padding: 2px;
-  font-size: 50px;
-  text-align: center;
-  height: 200px;
-  width: 96vw;
-  background-color: #65aba8;
-  border-radius: 20px;
-  border: solid 0.5px hsl(0, 45%, 81%);
+
+.row1,
+.row2{
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
-.feature4{
-  margin: 20px 0;
-  padding: 2px;
-  font-size: 50px;
-  text-align: center;
-  height: 200px;
-  width: 96vw;
-  background-color: #17a4a0;
-  border-radius: 20px;
-  border: solid 0.5px hsl(0, 45%, 81%);
+.row1{
+  margin-top: 50px;
+}
+.row2{
+  margin-bottom: 50px;
+}
+.feature__icon {
+  background: var(--color-danger);
+  padding: 0.6rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.feature__card:nth-child(2) .feature__icon {
+  background: var(--color-success);
+}
+
+.feature__card:nth-child(3) .feature__icon {
+  background: var(--color-primary);
+}
+
+.feature__card p {
+  margin-top: 1rem;
+}
+
+
+/* ==================== MEDIA QUERIES (TABLETS) ================= */
+@media screen and (max-width: 1024px) {
+  .about__achievements {
+    margin-top: 2rem;
+  }
+
+  .about__achievements-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .about__achievements-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .team__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .team__member {
+    padding: 1rem;
+  }
+}
+
+/* ==================== MEDIA QUERIES (TABLETS) ================= */
+@media screen and (max-width: 600px) {
+
+  .team__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+  .team__member {
+    padding: 0;
+  }
+
+  .team__member p {
+    margin-bottom: 1.5rem;
+  }
 }
 .intro p{
   font-size: 30px;
