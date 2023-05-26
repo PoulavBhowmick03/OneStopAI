@@ -404,7 +404,7 @@ a{
     border-radius: 30px;
   }
   .github {
-    background-image: url("github.jpg");
+    background-image: url("/img/github.jpg");
     opacity: 100%;
     padding: -100px;
     object-fit: scale-down;
